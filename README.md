@@ -1,6 +1,6 @@
 # Solidity: Smart Contracts
 
-![ETH](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/eth_coin.jpg)
+![ETH](https://github.com/bgregory0913/Solidity_Smart_Contraacts/blob/main/Images/eth_coin.jpg)
 
 
 # Overview:
@@ -24,19 +24,19 @@ The associate profit splitter contract has two main functions:
 
 The contract is compiled using the Solidity Compiler in Remix, then deployed in the `Injected Web3` environment. After deploying, we need to enter three employee addresses in the address parameters (the three employee payable addresses defined in the contract).
 
-![ContractDeployment](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/DeployAndRunTransaction.PNG)
+![ContractDeployment](https://github.com/bgregory0913/Solidity_Smart_Contraacts/blob/main/Images/DeployAndRunTransaction.PNG)
 
 __Deposit 30 Ether (executed in MetaMask):__
 
-![Deposit](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/ApproveTransaction.PNG)
+![Deposit](https://github.com/bgregory0913/Solidity_Smart_Contraacts/blob/main/Images/ApproveTransaction.PNG)
 
 __Original Balances (in Ganache):__
 
-![OriginalBalances](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/AcctBalancesBeforeTransfer.PNG)
+![OriginalBalances](https://github.com/bgregory0913/Solidity_Smart_Contraacts/blob/main/Images/AcctBalancesBeforeTransfer.PNG)
 
 __Balances After Deposit:__
 
-![BalancesAfterDeposit](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/AfterTransfer.PNG)
+![BalancesAfterDeposit](https://github.com/bgregory0913/Solidity_Smart_Contraacts/blob/main/Images/AfterTransfer.PNG)
  
  
 
