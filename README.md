@@ -3,14 +3,14 @@
 ![ETH](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/eth_coin.jpg)
 
 
-# Associate Profit Splitter Contract
+# Overview:
 
-## Purpose:
-
-Demonstrate developing and using a smart contract to pay associate-level employees. By using a smart contract for this purpose, you essentially automate accounting, auditing, and employee payment on behalf of HR.
+Demonstrate how to develop and use smart contracts to pay employees. By using a smart contract for this purpose, you essentially automate accounting, auditing, and employee payments.
 
 
-## Overview:
+## Associate-Level Profit Splitter Contract
+
+### Purpose:
 
 The associate profit splitter contract has two main functions:
 
@@ -22,7 +22,7 @@ The associate profit splitter contract has two main functions:
 
 ### Testing the Contract:
 
-The contract is compiled using the Solidity Compiler in Remix, then deployed in the `Injected Web3` environment. Before deploying, we need to enter three employee addresses in the address parameters (the three employee payable addresses defined in the contract).
+The contract is compiled using the Solidity Compiler in Remix, then deployed in the `Injected Web3` environment. After deploying, we need to enter three employee addresses in the address parameters (the three employee payable addresses defined in the contract).
 
 ![ContractDeployment](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/DeployAndRunTransaction.PNG)
 
@@ -38,6 +38,48 @@ __Balances After Deposit:__
 
 ![BalancesAfterDeposit](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/AfterTransfer.PNG)
  
+ 
+
+## Tiered Profit Splitter Contract
+
+### Purpose:
+
+In this contract, rather than splitting the profits between associate-level employees we calculate rudimentary percentages for different tiers of employees (CEO, CTO, and Bob) and pay them accordingly.
+
+The `deposit` function in this contract has the following differences from the associate-level contract `deposit` function:
+
+1. Calculation of the number of points/units is done by dividing `msg.value` by 100. This allows us to multiply the points with a number representing a percentage.
+2. The `uint amount` variable is used to store the amount to send each employee temporarily. For each employee, the amount is set equal to the number of points multiplied by the percentage 
+    1. For `employee_one`, distribute points * 60.
+    2. For `employee_two`, distribute points * 25.
+    3. For `employee_three`, distribute points * 15.
+3. After calculating the amount for the first employee, the amount is added to the total to keep a running total of how much of the `msg.value` has distributed.
+4. After transfering the amount, the remainder is sent to the employee with the highest percentage by subtracting `total` from `msg.value`.
+
+### Testing the Contract:
+
+The contract is compiled the same way (using the Solidity Compiler in Remix), and deployed in the `Injected Web3` environment. After deploying, we need to enter three employee addresses in the address parameters (the three employee payable addresses defined in the contract).
+
+![ContractDeployment](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/TieredSendDeposit.PNG)
+
+__Deposit 200 Ether (executed in MetaMask):__
+
+![Deposit](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/Tiered_Approval.PNG)
+
+__Original Balances (in Ganache):__
+
+![OriginalBalances](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/Tiered_BalancesBefore.PNG)
+
+__Balances After Deposit:__
+
+![BalancesAfterDeposit](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/Tiered_BalancesAfter.PNG)
+
+__Using the Balance Function:__
+
+The function returns a value of 0 indicating that the deposit function is handling the remaining ethereum successfully.
+
+![ZeroBalance](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/Tiered_CheckZeroBalance.PNG)
+
 
 
 ## Tools Used in This Project:
