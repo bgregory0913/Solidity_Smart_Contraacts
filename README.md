@@ -1,6 +1,6 @@
 # Solidity: Smart Contracts
 
-![ETH](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/eth_coin.jpg)
+![ETH](https://github.com/bgregory0913/Solidity_Smart_Contraacts/blob/main/Images/eth_coin.jpg)
 
 
 # Overview:
@@ -24,19 +24,19 @@ The associate profit splitter contract has two main functions:
 
 The contract is compiled using the Solidity Compiler in Remix, then deployed in the `Injected Web3` environment. After deploying, we need to enter three employee addresses in the address parameters (the three employee payable addresses defined in the contract).
 
-![ContractDeployment](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/DeployAndRunTransaction.PNG)
+![ContractDeployment](https://github.com/bgregory0913/Solidity_Smart_Contraacts/blob/main/Images/DeployAndRunTransaction.PNG)
 
 __Deposit 30 Ether (executed in MetaMask):__
 
-![Deposit](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/ApproveTransaction.PNG)
+![Deposit](https://github.com/bgregory0913/Solidity_Smart_Contraacts/blob/main/Images/ApproveTransaction.PNG)
 
 __Original Balances (in Ganache):__
 
-![OriginalBalances](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/AcctBalancesBeforeTransfer.PNG)
+![OriginalBalances](https://github.com/bgregory0913/Solidity_Smart_Contraacts/blob/main/Images/AcctBalancesBeforeTransfer.PNG)
 
 __Balances After Deposit:__
 
-![BalancesAfterDeposit](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/AfterTransfer.PNG)
+![BalancesAfterDeposit](https://github.com/bgregory0913/Solidity_Smart_Contraacts/blob/main/Images/AfterTransfer.PNG)
  
  
 
@@ -60,25 +60,25 @@ The `deposit` function in this contract has the following differences from the a
 
 The contract is compiled the same way (using the Solidity Compiler in Remix), and deployed in the `Injected Web3` environment. After deploying, we need to enter three employee addresses in the address parameters (the three employee payable addresses defined in the contract).
 
-![ContractDeployment](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/TieredSendDeposit.PNG)
+![ContractDeployment](https://github.com/bgregory0913/Solidity_Smart_Contraacts/blob/main/Images/TieredSendDeposit.PNG)
 
 __Deposit 200 Ether (executed in MetaMask):__
 
-![Deposit](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/Tiered_Approval.PNG)
+![Deposit](https://github.com/bgregory0913/Solidity_Smart_Contraacts/blob/main/Images/Tiered_Approval.PNG)
 
 __Original Balances (in Ganache):__
 
-![OriginalBalances](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/Tiered_BalancesBefore.PNG)
+![OriginalBalances](https://github.com/bgregory0913/Solidity_Smart_Contraacts/blob/main/Images/Tiered_BalancesBefore.PNG)
 
 __Balances After Deposit:__
 
-![BalancesAfterDeposit](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/Tiered_BalancesAfter.PNG)
+![BalancesAfterDeposit](https://github.com/bgregory0913/Solidity_Smart_Contraacts/blob/main/Images/Tiered_BalancesAfter.PNG)
 
 __Using the Balance Function:__
 
 The function returns a value of 0 indicating that the deposit function is handling the remaining ethereum successfully.
 
-![ZeroBalance](https://github.com/bgregory0913/Solidity_Smart_Contraacts/Images/Tiered_CheckZeroBalance.PNG)
+![ZeroBalance](https://github.com/bgregory0913/Solidity_Smart_Contraacts/blob/main/Images/Tiered_CheckZeroBalance.PNG)
 
 
 
